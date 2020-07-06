@@ -1,16 +1,24 @@
 class Person
-  def name=(persons_name)
-    @name=persons_name
+  def name=(person_name)
+    @name= person_name
   end
 
   def name
-    "#{@name}"
-  end
-
-  def job=(persons_job)
-    @job=persons_job
+    @name
   end
 
   def job
-    "#{@job}"
-  end 
+    @job
+  end
+
+def job=(person_job)
+  @job=person_job
+end
+end
+
+    Max=Person.new
+    Max.name= "Max"
+
+    Max.name
+    Max.job
+  
